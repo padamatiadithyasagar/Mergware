@@ -1,0 +1,21 @@
+<head>
+  <title>loan-management-system</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="react-target"></div>
+
+  <template name="main">
+    <h1>Welcome to the Loan Management System</h1>
+    {{> loanForm}}
+  </template>
+
+  <template name="loanForm">
+    <form>
+      <label for="loanAmount">Loan Amount:</label>
+      <input type="text" id="loanAmount" name="loanAmount">
+      <button type="button" onclick="requestLoan()">Request Loan</button>
+    </form>
+  </template>
+</body>
